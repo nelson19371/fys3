@@ -1,0 +1,97 @@
+div {
+    text-align: center;
+}
+.imagen_logo{
+    width: 110px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.parrafo_titulo {
+  font-size: 20px;
+  padding: 5px;
+
+}
+
+
+.alert p {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Dos columnas: una ajustada al contenido, otra que ocupa el espacio restante */
+    gap: 5px; /* Espacio entre columnas */
+    margin: 0;
+    /* padding: 5px 0; */
+  }
+
+  .alert span {
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+
+  .alert b {
+    text-align: right; /* Alinea el texto a la derecha */
+  }
+
+  #boton_gestion{
+    margin-top: 10px;
+  }
+  /* General container */
+.container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Responsive image */
+  .responsive-img {
+    width: 150px;
+    height: 100px;
+    align-self: center;
+  }
+
+  /* Map container with responsive iframe */
+  .map-container {
+   
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 42.25%; /* Aspect ratio 16:9 */
+   ; /* Add some spacing */
+  }
+
+  .responsive-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  /* Responsive button */
+  button {
+    width: 135px;
+    max-width: 300px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  /* Alert text adjustments */
+  .alert p {
+    margin-bottom: 10px;
+  }
+
+  /* Responsive font sizes for smaller screens */
+  @media (max-width: 600px) {
+    .parrafo_titulo {
+      font-size: 18px;
+    }
+
+    .alert p {
+      font-size: 14px;
+    }
+
+    button {
+      font-size: 14px;
+    }
+  }
