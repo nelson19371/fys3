@@ -8,6 +8,7 @@ import { DataSharingService } from './data-sharing.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  isLoading: boolean = true;
   alerta = {
     "lat": "-23.749273",
     "lng": "-70.108439",
@@ -34,24 +35,24 @@ export class AppComponent implements OnInit {
     this.dataSharingService.currentId.subscribe(id => {
       this.id = id;
       console.log("ID recibido en AppComponent:", this.id);
-      if (this.id=='123') {
+
         this.alerta = {
-          "lat": "-23.749273",
-          "lng": "-70.108439",
-          "mapa": "https://maps.google.com/?t=h&q=-23.749273,-70.108439",
-          "patente": "RBXB38",
-          "tipo_alerta": "Fatiga y Somnolencia",
-          "detalle_alerta": "Conductor Bostezando",
-          "fecha": "03-09-2024 12:42:58",
-          "nombre_contacto": "Nelson Connor",
-          "nombre_responsable": "Sin Asignar",
-          "cargo_responsable": "",
-          "empresa": "INGENIERIA ERR SPA",
-          "estado": "Por Gestionar"
+          "lat": "-23.749273"+this.id,
+          "lng": "-70.108439"+this.id,
+          "mapa": "https://maps.google.com/?t=h&q=-23.749273,-70.108439 id:"+this.id,
+          "patente": "RBXB38 id:"+this.id,
+          "tipo_alerta": "Fatiga y Somnolencia id:"+this.id,
+          "detalle_alerta": "Conductor Bostezando id:"+this.id,
+          "fecha": "03-09-2024 12:42:58 id:"+this.id,
+          "nombre_contacto": "Nelson Connor id:"+this.id,
+          "nombre_responsable": "Sin Asignar id:"+this.id,
+          "cargo_responsable": " id:"+this.id,
+          "empresa": "INGENIERIA ERR SPA id:"+this.id,
+          "estado": "Por Gestionar id:"+this.id
         };
-      }
-        
-      // Puedes usar el id aquí para hacer alguna operación adicional si es necesario
+
+
+
     });
   }
 
