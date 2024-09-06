@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+/* Estilos para los íconos */
+.icon {
+  font-size: 20px; /* Ajusta el tamaño según sea necesario */
+}
+
+.fa-check {
+  color: #4CAF50; /* Color verde para 'sent' */
+}
+
+.fa-check-double {
+  color: #2196F3; /* Color azul para 'received' */
+}
+
+.icon {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 24px;
+  color: #000;
+}

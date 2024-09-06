@@ -1,3 +1,4 @@
+/* General styling */
 div {
   text-align: center;
 }
@@ -92,14 +93,64 @@ button {
 
 @media (max-width: 600px) {
   .parrafo_titulo {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .alert p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   button {
-      font-size: 14px;
+    font-size: 14px;
   }
 }
+
+.notificaciones {
+  margin: 20px 0;
+}
+
+.notificaciones h3 {
+  margin-bottom: 10px;
+}
+
+.notification-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.notification-table th, .notification-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.notification-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.notification-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.notification-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Estilos para los íconos */
+.icon {
+  font-size: 20px;
+}
+
+.fa-check {
+  color: #4CAF50; /* Green check for sent */
+}
+
+.fa-check-double {
+  color: #2196F3; /* Blue double check for read and received */
+}
+
+.fa-check-double.blue {
+  color: #2196F3; /* Blue double check for received */
+}
+

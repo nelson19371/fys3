@@ -18,15 +18,39 @@
     </iframe>
   </div>
 
-  <div class="alert">
-    <p><span class="label">Alerta:</span><b>{{alerta.detalle_alerta}}</b></p>
-    <p><span class="label">Fecha:</span><b>{{alerta.fecha}}</b></p>
-    <p><span class="label">Patente:</span><b>{{alerta.patente}}</b></p>
-    <p><span class="label">Estado:</span><b>{{alerta.estado}}</b></p>
-    <p><span class="label">Responsable:</span><b>{{alerta.nombre_responsable}}</b></p>
+  <div class="notificaciones">
+    <h3>Notificaciones</h3>
+    <table class="notification-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Teléfono</th>
+          <th>Cargo</th>
+          <th>Nivel</th>
+          <th>SMS</th>
+          <th>WhatsApp</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let notificacion of alerta.notificaciones">
+          <td>{{notificacion.nombre}}</td>
+          <td>
+            {{notificacion.email.to}}
+            <span [ngClass]="getEmailIconClass(notificacion.email.status)" class="icon"></span>
+          </td>
+          <td>{{notificacion.telefono}}</td>
+          <td>{{notificacion.cargo}}</td>
+          <td>{{notificacion.nivel}}</td>
+          <td>
+              <span [ngClass]="getSmsIconClass(notificacion.sms)" class="icon"></span>
+          </td>
+          <td>
+            <span [ngClass]="getWhatsappIconClass(notificacion.whatsapp.status)" class="icon"></span>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-
-  <button class="btn btn-secondary" id="boton_gestion">Iniciar Gestión</button>
 </div>
-
-<router-outlet></router-outlet>
