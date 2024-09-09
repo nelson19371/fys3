@@ -39,23 +39,67 @@ export class AppComponent implements OnInit {
             }
         },
         {
-          "nombre": "Nelson Connor",
-          "email": {
-              "to": "nelsonconnor@savinghumanity.org",
-              "status": "read"
-          },
-          "telefono": "+56912345678",
-          "cargo": "Ataja Incendios",
-          "nivel": "1",
-          "sms": "sent",
-          "whatsapp": {
-              "status": "read",
-              "status_time": "03-09-2024 12:43:00"
-          }
-      },
-        // otros objetos de notificación...
+            "nombre": "Neo Anderson",
+            "email": {
+                "to": "neo@thematrix.com",
+                "status": "sent"
+            },
+            "telefono": "+56912345678",
+            "cargo": "The One",
+            "nivel": "2",
+            "sms": "sent",
+            "whatsapp": {
+                "status": "read",
+                "status_time": "03-09-2024 12:43:00"
+            }
+        },
+        {
+            "nombre": "Obi Wan Kenobi",
+            "email": {
+                "to": "obiwan@jediorder.io",
+                "status": "sent"
+            },
+            "telefono": "+56912345678",
+            "cargo": "Maestro Jedi",
+            "nivel": "3",
+            "sms": "sent",
+            "whatsapp": {
+                "status": "received",
+                "status_time": "03-09-2024 12:43:00"
+            }
+        },
+        {
+            "nombre": "Walter White",
+            "email": {
+                "to": "ww@kingpin.com",
+                "status": "sent"
+            },
+            "telefono": "+56912345678",
+            "cargo": "Heisenberg",
+            "nivel": "4",
+            "sms": "sent",
+            "whatsapp": {
+                "status": "read",
+                "status_time": "03-09-2024 12:43:00"
+            }
+        },
+        {
+            "nombre": "Chuck Norris",
+            "email": {
+                "to": "chuck@norris",
+                "status": "sent"
+            },
+            "telefono": "+56912345678",
+            "cargo": "Gerente",
+            "nivel": "8001",
+            "sms": "sent",
+            "whatsapp": {
+                "status": "sent",
+                "status_time": "03-09-2024 12:43:00"
+            }
+        }
     ]
-  };
+};
 
   mapUrl: SafeResourceUrl;
   id: string | null = null;
